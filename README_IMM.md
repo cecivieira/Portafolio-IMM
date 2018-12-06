@@ -1,1 +1,2 @@
-"La plantilla "modelo.html" podr  ayudarles a adaptar las pr cticas para la identidad visual de la portada. Ass: Ana Cecília" 
+"La plantilla "modelo.html" podrá ayudarles a adaptar las practicas para la identidad visual de la portada. 
+La hoja de estilo (main.css) está en la carpeta \assets\css. Por favor, no la haga alteraciones. Ass: Ana Cecília" 
