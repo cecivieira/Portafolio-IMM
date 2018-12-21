@@ -155,7 +155,7 @@ input, select, textarea {
 
 		}
 
-	a {
+	a, link {
 		-moz-transition: color 0.2s ease, border-bottom 0.2s ease;
 		-webkit-transition: color 0.2s ease, border-bottom 0.2s ease;
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
@@ -164,6 +164,9 @@ input, select, textarea {
 		border-bottom: dotted 1px;
 		color: inherit;
 	}
+		a:visited {
+			color: #00CC97;
+		}
 
 		a:hover {
 			border-bottom-color: transparent;
@@ -2339,9 +2342,9 @@ input, select, textarea {
 			background-color: rgba(255, 255, 255, 0.2);
 		}
 
-/* Image */
+/* Image, Video, Audio */
 
-	.image {
+	.image, .video, .audio {
 		border-radius: 8px;
 		border: 0;
 		display: inline-block;
@@ -2392,6 +2395,7 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
+
 
 /* List */
 
