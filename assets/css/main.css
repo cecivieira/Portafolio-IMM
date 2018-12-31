@@ -207,6 +207,33 @@ input, select, textarea {
 			text-align: justify;
 		}
 
+		p.imm.border{
+			border-left: 4px solid #007F5F;
+			border-right: 4px solid #007F5F;
+			border-top: 4px solid #007F5F;
+			border-radius: 8px;
+		}
+
+		p.imm.column{
+			column-count: 3;
+		}
+
+		p.imm.rotation{
+			transform: rotate(30deg);
+			padding-top: 20%;
+			padding-left: 30px;
+		}
+
+		p.imm.codigo{
+			margin: 0 0 0 0;
+			text-indent: 1.5em;
+		}
+
+		p.imm{
+			margin: 0 0 0 0;			
+		}
+
+
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.5;
