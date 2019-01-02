@@ -70,7 +70,7 @@
               aparición, desarrollo y expansión de la World Wide Web (WWW). Es
               el estándar que se ha impuesto en la visualización de páginas web
               y es el que todos los navegadores actuales han adoptado." (trecho
-              del verbete HTML disponible en <a href="https://es.wikipedia.org/wiki/HTML">
+              del verbete HTML disponible en <a rel="external" target="_blank" href="https://es.wikipedia.org/wiki/HTML">
                 Wikipedia </a>)</p>
             <p></p>
             <p>Veamos algunos ejemplos de actividades:</p>
@@ -201,7 +201,7 @@
                       resalten en verde al pasar sobre ellos y que se queden en
                       amarillo después de ser visitados.</p>
                     <ul>
-                      <li><a class="imm" href="#ejercicio3">Enlace teste</a></li>
+                      <li><a class="imm" target="_blank" href="index.html">Enlace teste</a></li>
                     </ul>
                   </div>
                   <div class="col-6"><span class="image fit"><img src="images/enlaces_hover_visited.jpg" alt="Código CSS informando configuración para enlaces antes y después de visitados."></span></div>
@@ -351,29 +351,36 @@
               </ul>
             </section>
 
+            <hr />
+
             <section id="ejercicio4">
-              <h2>Ejercicio 4</h2>
-              <p>Pudimos observar en el sitio web <a rel="external" target="_blank" href="https://onebillion.org/about/team/">One Billion</a> adaptaciones del layout de acuerdo con el tamaño de la pantalla. Los cambios percebidos fueron: tamaño de las imágenes, cantidad de imagen por línea y tamaño de letra</p>
-              <p>Para que el documento tenga ese comportamiento todas las imágenes están en una "div class="team-card"", que tiene su comportamiento determinado a través de <i>medias queries</i>, las cuales informa el percentil máximo que la imagen deberá ocupar de la pantalla.</p>
-              <div class="box alt">
+                <h2>Ejercicio 4 (optativo)</h2>
+                <p>Pudimos observar en el sitio web <a rel="external" target="_blank" href="https://onebillion.org/about/team/">One Billion</a> adaptaciones del layout de acuerdo con el tamaño de la pantalla. Los cambios percebidos fueron: tamaño de las imágenes y cantidad de imagen por línea.</p>
+                <p>Para que el documento tenga ese comportamiento todas las imágenes están en una "div class="team-card"", que tiene su comportamiento determinado a través de <i>medias queries</i>, las cuales informa el percentil máximo que la imagen deberá ocupar de la pantalla.</p>
+                <div class="box alt">
                   <div class="row gtr-uniform">
                     <div class="col-6"><span class="image fit"><img src="images/onebillion_ej1.jpg" alt="Screenshot del sitio web One Billion con la inspección de la página a la derecha."></span></div>
-                    <div class="col-6"><span class="image fit"><img src="images/onebillion_ej2.jpg" alt="Screenshot del sitio web One Billion con la inspección de la página a la derecha."></span></div>
-                    <div class="col-6">
-                      <p>Imagen en mapa de bits</p>
-                    </div>
-                    <div class="col-6">
-                      <p>Imagen vectorial</p>
-                    </div>
-                  </div>
+                    <div class="col-6"><span class="image fit"><img src="images/onebillion_ej2.jpg" alt="Screenshot del sitio web One Billion con la inspección de la página a la derecha."></span></div>                    
+                  </div>                
                 </div>
-            </section>
+              </section> 
+            
+            <hr />
 
             <section id="actividad3">
-              <h2>Actividad 3</h2>
-              <p>Durante el intento de analizar el sitio web <a rel="external" target="_blank" href="https://onebillion.org">One Billion</a> no fue localizada la pantalla citada en el ejercicio, así pues no fue posible describir los elementos "colores, tamaño, posición,
-                animaciones … y cuáles se adaptan a las capacidades de visualización" (<a target="_blank" href="text/practica__HTML_CSS.pdf">Manuel Augustí, 2018</a>)</p>              
-            </section>
+              <h2>Actividad 3 (optativa)</h2>
+              <p>Fue echo cambio en el código CSS del Banco de Pruebas de la Actividad 2 para que el deseño sea responsivo al tamaño de la pantalla. El código añadido fue:</p>
+              <p class="imm">@media screen and (max-width: 768px) {</p>
+              <p class="imm codigo">body{</p>
+              <p class="imm codigo">width: 100%;</p>
+              <p class="imm codigo">}</p>
+              <p class="imm">}</p>
+
+              <ul class="actions fit">                
+                <li><a href="diveintohtml5/bancodepruebas.html" target="_blank" class="button primary fit">Banco de pruebas</a></li>
+              </ul>            
+            </section>                       
+        
       </div>
       <!-- Footer -->
       <footer id="footer">
