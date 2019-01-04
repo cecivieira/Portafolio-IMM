@@ -17,7 +17,7 @@ form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
-section, summary, time, mark, audio, video {
+section, summary, time, mark, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1908,6 +1908,8 @@ input, select, textarea {
 		border-color: rgba(255, 255, 255, 0.35);
 	}
 
+
+
 /* Button */
 
 	input[type="submit"],
@@ -1967,6 +1969,10 @@ input, select, textarea {
 		button.small,
 		.button.small {
 			font-size: 0.8em;
+		}
+
+		.button.small.imm{
+			margin-left: 80%;
 		}
 
 		input[type="submit"].large,
@@ -2051,8 +2057,8 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #9acff2;
-			}
+				background-color: #9acff2;				
+			}			
 
 			input[type="submit"].primary:active,
 			input[type="reset"].primary:active,
@@ -2519,6 +2525,7 @@ input, select, textarea {
 					border-top: 0;
 					padding-top: 0;
 				}
+		
 
 	dl {
 		margin: 0 0 2em 0;
@@ -2699,6 +2706,20 @@ input, select, textarea {
 			ul.icons li:last-child {
 				padding-right: 0 !important;
 			}
+	
+	.jm-icon-dropdown {
+		border: solid #959595; /* Light gray */
+		border-width: 0 2px 2px 0;
+		display: inline-block;
+		margin: 0 0 3px 8px;
+		padding: 3px;
+		transform: rotate(45deg);
+	} 
+	
+	li:hover .jm-icon-dropdown {
+		border-color: #fff; /* White */
+	} 
+
 
 /* Section/Article */
 
