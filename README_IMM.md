@@ -1,2 +1,0 @@
-"La plantilla "modelo.html" podrá ayudarles a adaptar las practicas para la identidad visual de la portada. 
-La hoja de estilo (main.css) está en la carpeta \assets\css. Por favor, no la haga alteraciones. Ass: Ana Cecília" 
