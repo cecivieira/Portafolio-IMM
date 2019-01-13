@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!--
+	Stellar by HTML5 UP	html5up.net | @ajlkn	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)-->
+<html>
+  <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<title>Portafolio IMM 2018/2019</title>
+		<meta name="author" content="Ana Cecília Vieira, Johans Peña, Andrea Naranjo">
+		<meta name="description" content="Portafolio hecho durante la disciplina IMM del MUGI, resultado de la compilación de todas las actividades prácticas.">
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+		<link rel="icon" href="images/imm_icon.ico">		
+	</head>
+  <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header">
+        <h1>Audio</h1>
+        <p>Portafolio</p>
+      </header>
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#actividad1" class="active">Actividad 1</a></li>
+          <li><a href="#actividad2">Actividad 2</a></li>
+          <li><a href="#actividad3">Actividad 3</a></li>
+          <li><a href="#actividad4">Actividad 4</a></li>
+          <li><a href="#actividad5">Actividad 5</a></li>
+          <li><a href="#actividad6">Actividad 6</a></li>
+          <li><a href="#actividad7">Actividad 7</a></li>
+          <li><a href="#actividad8">Actividad 8</a></li>
+        </ul>
+      </nav>
+      <!-- Main -->
+      <div id="main">
+        <!-- Content -->
+        <section id="content" class="main">
+          <!-- Text -->
+          <section>
+            <p>"En esta práctica se abordan las cuestiones básicas relativas a
+              la adquisición, representación y edición de información de audio.
+              En particular, trataremos la adquisición de audio a partir de los
+              conocidos discos compactos de audio (CD-DA: Compact Disc Digital
+              Audio). Se estudiará también la representación del audio en el
+              dominio del tiempo y en el dominio de la frecuencia, para estudiar
+              las operaciones de edición básicas más habituales." (<a target="_blank" href="text/practica_audio.pdf">Manuel
+                Augustí, 2018 y otros autores</a>)</p>            
+            <p>Todos los ejercicios y actividades de este sitio web son
+              productos de las instrucciones del apartado <a target="_blank" href="text/practica_audio.pdf">Práctica 2: Audio.
+              Edición básica con Audacity</a>, de la asignatura Información
+              Multimedia en Entornos Multidispositivo.</p>
+            <hr>
+            <section id="actividad1">
+              <h2>Actividad 1</h2>
+              <p>Compruebe el sistema de sonido del que dispone su equipo y
+                realice la captura de pantalla que lo muestra.</p>
+              <div class="box alt">
+                <div class="row gtr-uniform">
+                  <div class="col-6">
+                    <ul>
+                      <li>La información de la tarjeta de sonido no pude ser
+                        obtenida con el visor de Windows. Por este motivo se
+                        buscaron las especificaciones del fabricante, en este
+                        caso Lenovo. </li>
+                      <li>La tarjeta de sonido instalada es Realtek High
+                        Definition Audio ALC892</li>
+                      <li>Posee 10 canales DAC que son compatibles con el
+                        formato PCM de 16/20/24 bits para la reproducción de
+                        sonido de 7.1 canales, más 2 canales de salida de sonido
+                        estéreo independiente. Son compatibles con una
+                        frecuencia de muestreo de 44.1k / 48k / 96k / 192kHz </li>
+                    </ul>
+                  </div>
+                  <div class="col-6"><span class="image fit"><img src="images/actividad1.JPG" 
+                    alt="Captura de pantalla sistema de sonido"></span></div>
+                </div>
+              </div>
+            </section>
+            <a class="button small imm" href="#">Cumbre</a>
+            <hr>
+            <section id="actividad2">
+              <h2>Actividad 2</h2>
+              <p>Complete la tabla 1 y compare la calidad de la reproducción con
+                el espacio requerido en cada una de las representaciones.
+                Mantenga en todos los casos la frecuencia de muestreo y número
+                de canales del CD-A original (44.100Hz / 2 canales). Es posible
+                que alguna de las conversiones no pueda ser reproducida con el
+                reproductor por defecto. Haga uso del propio VLC o de Audacity
+                [3] para conseguir una reproducción sin problemas. </p>
+              <h3>Resultados de la actividad</h3>
+              <p>Para esta actividad se utilizó un fichero del sitio web
+                <a rel="external" target="_blank" href="http://www.2l.no/hires/">http://www.2l.no/hires/</a> el cual funciona como un banco de
+                pruebas para nuevos formatos de audio y trabajos musicales. La
+                opción elegida fue la siguiente: Fichero original: Concierto
+                para violín en Re mayor_Mozart Duración: 9 minutos y 14 segundos
+                Formato: .flac</p>
+              <h3>Tabla 1</h3>
+              <p>Las conversiones de formato se realizaron utilizando el
+                programa VLC. Parala reproducción se usó el mismo programa.</p>
+              <div class="table-wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Formato</th>
+                      <th>Perfil = Encapsulamiento + Códec</th>
+                      <th>Tamaño fichero(KiB)</th>
+                      <th>Comentarios sobre la calidad</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>WAV (.wav)</td>
+                      <td>Audio CD = WAV + WAV</td>
+                      <td>17317 KB</td>
+                      <td>La calidad es un poco menor a la original y se pierde
+                        la nitidez</td>
+                    </tr>
+                    <tr>
+                      <td>FLAC(,flac, 128kbps)</td>
+                      <td>Audio – FLAC = RAW + Flac</td>
+                      <td>13056 KB</td>
+                      <td>Similiar a la conversión Flac, similar calidad</td>
+                    </tr>
+                    <tr>
+                      <td>MP3(.mp3,128kbps</td>
+                      <td>Audio–MP3= RAW+ MP3</td>
+                      <td>13056 KB</td>
+                      <td>Calidad media, se pierden tonos altos y bajos</td>
+                    </tr>
+                    <tr>
+                      <td>MP3 (.mp3,32kbps)</td>
+                      <td>Audio– MP3= RAW+ MP3</td>
+                      <td>13056 KB</td>
+                      <td>Calida inferior a la de MP3 128kbps</td>
+                    </tr>
+                    <tr>
+                      <td>AAC (.mp4a o .m4a, 128 kbps)</td>
+                      <td>Audio MP3(MP4)= MP4/MOV + MPEG 4 Audio (AAC)o Audio
+                        MP3 + AAC/MP4</td>
+                      <td>4875 KB</td>
+                      <td>En esta conversión la calidad mejora bastante, no más
+                        que la original, pero si del resto</td>
+                    </tr>
+                    <tr>
+                      <td>OGG Vorbis(.ogg, 32 kbps)o 128 kpbs</td>
+                      <td>Audio - Vorbis (OGG) = Ogg/Ogm + Vorbis</td>
+                      <td>0KB</td>
+                      <td>No se pudo reproducir con esta conversión</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <p><b>¿Cuál cree que representa un mejor compromiso entre ambos
+                  factores?</b></p>
+                <p>Según lo escuchado, el archivo en MP4 entrega un calidad más
+                  aceptable</p>
+              </div>
+            </section>
+            <a class="button small imm" href="#">Cumbre</a>
+            <hr>
+            <section id="actividad3">
+              <h2>Actividad 3</h2>
+              <p>A partir del fichero mono bluesIntro.wav (disponible, en el
+                subdirectorio media del recurso compartido indicado al
+                principio de esta memoria de práctica): genere una versión
+                estéreo del mismo donde se pueda apreciar claramente el
+                posicionamiento del audio en los dos canales (izquierdo y
+                derecho). Para ello, deberá procederse de la siguiente forma:
+              </p>
+              <ol>
+                <li>Seleccione toda la información correspondiente al fichero
+                  y genere una copia de la misma mediante la opción
+                  Editar|Duplicar.</li>
+                <li>Seleccione el menú desplegable situado en la cabecera de
+                  cada pista y asigne los valores canal izquierdo y canal
+                  derecho, respectivamente</li>
+                <li>Inserte silencios alternativamente en uno y otro canal, de
+                  modo que se aprecie mejor el efecto estéreo. Para ello, lo
+                  más sencillo es marcar una zona de la pista y seleccionar
+                  Generar|Silences.</li>
+                <li>Genere el fichero estéreo correspondiente seleccionando
+                  Archivo|Exportar como WAV</li>
+              </ol>
+              <h3>Resultado de la actividad: </h3>
+              <p> En la siguiente captura se muestra el resultado de la
+                actividad y al final, se encuentra el archivo para reproducir.
+              </p>
+              <div class="box alt">
+                <div class="row gtr-uniform">
+                  <div class="col-12"><span class="image fit"><img src="images/aud_act3.JPG"></span></div>
+                </div>
+              </div>
+              <p> Resultado en formato WAV </p>
+              <div class="box alt">
+                <div class="row gtr-uniform">
+                  <div class="col-12"><audio controls="controls"><source src="audios/Au_act3_sonido%20estereo.wav" type="audio/wav"></audio>                     </div>
+                </div>
+              </div>
+              </section>
+              <a class="button small imm" href="#">Cumbre</a>
+              <hr>
+          
+              <section id="actividad4">
+                <h2>Actividad 4</h2>
+                <p>A partir de una señal de audio mono (o estéreo, según
+                  los casos), aplique los siguientes efectos y vaya
+                  anotando una breve descripción. Todos ellos están
+                  disponibles en el menú Efecto. Puede investigar, si
+                  lo desea, otros efectos disponibles. </p>
+                <p>Antes de realizar un nuevo efecto se debe recuperar
+                  la señal original, bien volviéndola a leer de disco o
+                  mediante la opción Deshacer del menú Editar. También
+                  se puede utilizar la opción Previsualización y
+                  Cancelar.</p>
+                <h3>Tabla 2</h3>
+                <div class="table-wrapper">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th>Efecto </th>
+                        <th>Descripción</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Amplify (amplificar)</td>
+                        <td>Con este efecto la señal de audio en general
+                          se amplifica en decibelios, si se usan valores
+                          muy altos la señal se puede saturar o perder
+                          calidad.</td>
+                      </tr>
+                      <tr>
+                        <td>Bassboost (realzar graves)</td>
+                        <td>En este efecto se amplifican, en decibelios
+                          (db), los sonidos graves y los agudos se
+                          mantienen igual. </td>
+                      </tr>
+                      <tr>
+                        <td>Echo (eco)</td>
+                        <td>Con el efecto eco, se genera una repetición
+                          de acuerdo con un tiempo de retraso y un
+                          factor de decaimiento.</td>
+                      </tr>
+                      <tr>
+                        <td>Reverse (revertir)</td>
+                        <td>Este efecto invierte el audio.</td>
+                      </tr>
+                      <tr>
+                        <td>Fade in (aparecer)</td>
+                        <td>Genera que el audio comience con un nivel
+                          bajo de la señal hasta que adquiere su forma
+                          original, al transcurso de unos segundos.</td>
+                      </tr>
+                      <tr>
+                        <td>Fade out (desvanecer)</td>
+                        <td>Genera que en la última parte del audio este
+                          disminuye su nivel.</td>
+                      </tr>
+                      <tr>
+                        <td>Cambiar pitch (tono) Se recomienda utilizar
+                          una pieza de música clásica</td>
+                        <td>Este efecto permite cambiar los tonos de
+                          audio, es decir las notas musicales o
+                          frecuencias.</td>
+                      </tr>
+                      <tr>
+                        <td>Cambiar tempo</td>
+                        <td>Esta opción permite cambiar la velocidad por
+                          la cual se reproduce el audio.</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                </section>
+
+                <a class="button small imm" href="#">Cumbre</a>
+                <hr>
+
+                <section id="actividad5">
+                  <h2>Actividad 5</h2>
+                  <p>Escoja dos temas musicales, con representación en
+                    forma de onda, del directorio del recurso
+                    compartido. A partir de los mismos, se propone
+                    generar un único archivo en el que, a modo de
+                    “pinchadiscos” con una mesa de mezclas, se vaya
+                    silenciando el primero para dar progresivamente
+                    paso al segundo. </p>
+                  <p>Guárdese una captura de pantalla del proceso
+                    (mezcla.png) para poder explicar cómo se trabajó
+                    esta actividad, junto con el archivo de proyecto
+                    que genera Audacity (mezcla.aup), los ficheros de
+                    audio de partida y el resultante de la actividad
+                    (mezcla.wav).</p>
+                  <p>El archivo de audio final (mezcla.wav) debe tener
+                    las siguientes características:</p>
+                  <ol>
+                    <li>una duración de
+                      unos 60 segundos, de forma que los dos temas
+                      ocupen intervalos semejantes.</li>
+                    <li>una calidad
+                      idéntica a la de los archivos fuente.</li>                      
+                  </ol>
+                  <p>Captura de pantalla del proceso:</p>                  
+                  
+                  <div class="box alt">
+                    <div class="row gtr-uniform">
+                      <div class="col-12"><span class="image fit"><img 
+                        src="images/mezcla.PNG"></span></div>
+                    </div>
+                  </div>
+                  
+                  <p><b>Archivo de proyecto que genera <a target="_blank" href="audios/Mezcla%20proyecto.aup">Audacity:</a></b></p>
+                                   
+                  <audio src="audios/Au_act5_audio%201_Feel%20my%20needs.wav" 
+                  preload="none" controls="controls"></audio>
+                  <p>Tema musical 1: Canción Feel my needs.</p>
+                  <br>
+                  <audio src="audios/Au_act5_audio%202_Back%20and%20Forth.wav" 
+                  preload="none" controls="controls"></audio>
+                  <p>Tema musical 2: Back and Forth</p>
+                  <br>
+                  <audio src="file:///C:/Users/JPA/Documents/IMM/Portafolio-IMM-master/Portafolio-IMM-master/audios/Au_act5_Mezcla.wav" 
+                  preload="none" controls="controls"></audio>
+                  <p> Archivo de audio final: Mezcla</p>
+                </section>
+
+                <a class="button small imm" href="#">Cumbre</a>
+                <hr>
+
+                <section id="actividad6">
+                  <h2>Actividad 6</h2>
+                  <p>Cree una banda sonora en la que se le escuche
+                    dar una pequeña charla de medio minuto a un
+                    auditorio (puede obtener el contenido de
+                    cualquier artículo de prensa digital, por
+                    ejemplo). Se sugiere que siga los siguientes
+                    pasos: </p>
+                  <ol>
+                    <li>Grabe su locución y procésela hasta obtener
+                      un nivel de volumen y calidad aceptables. Si el
+                      resultado de su grabación fuera ruidoso, elimine
+                      el ruido con ayuda de opciones como “Reducción
+                      de ruido”.</li>
+                    <li>Introduzca un efecto de reverberación para
+                      simular que da su charla en una sala de gran
+                      tamaño, a un amplio auditorio.</li>
+                    <li>Añada nuevas pista con sonido ambiental. Por
+                      ejemplo un murmullo constante de fondo, alguien
+                      que tose esporádicamente, etc. Tome estos
+                      efectos del repositorio.</li>
+                    <li>Introduzca sonido de aplausos cuando
+                      finalice su locución.</li>
+                  </ol>
+                  
+                  <p>Guárdese una captura de pantalla del proceso
+                    (bso.png) para poder explicar cómo se trabajó
+                    esta actividad, junto con el archivo de proyecto
+                    que genera Audacity (bso,aup), los ficheros de
+                    audio de partida y el resultante de la actividad
+                    (bso.wav)</p>
+                  <p>Capturas de pantalla del proceso(bso.png):</p>
+                  
+                  <div class="box alt">
+                    <div class="row gtr-uniform">
+                      <div class="col-6"><p><b>1)</b> Captura de la locución original:</p></div>
+                      <div class="col-6"><span class="image fit"><img src="images/au_act6_proceso.PNG"></span></div>
+                      <div class="col-6"><b>2)</b> Captura de la locución con Reverberancia</div>
+                      <div class="col-6"><span class="image fit"><img src="images/au_act6_proceso2.PNG"></span></div>
+                      <div class="col-6"><p><b>3)</b> Captura de la locución con sonido ambiente: 
+                        Para esta parte se utilizaron dos efectos, 
+                        "People Talking" y "Tos persona", ambas descargadas del sitio web 
+                        <a rel="externo" target="_blank" href="http://www.sonidosmp3gratis.com">http://www.sonidosmp3gratis.com</a></p></div>
+                      <div class="col-6"><span class="image fit"><img src="images/au_act6_proceso3.PNG"></span></div>
+                      <div class="col-6"><p><b>4)</b> Captura de la locución con aplausos al final: 
+                        Para esta parte se utilizó el efecto "Aplausos 1", descargado del sitio web 
+                        <a rel="externo" target="_blank" href="http://www.sonidosmp3gratis.com">http://www.sonidosmp3gratis.com</a></p></div>
+                      <div class="col-6"><span class="image fit"><img src="images/au_act6_proceso4.PNG"></span></div>
+                    </div>
+                  </div>
+
+                  <p>Archivo de proyecto que genera <a target="_blank" href="audios/Au_act6_bso.aup">Audacity:</a></p>
+                  
+                  <audio src="audios/bso_partida.wav" preload="none" controls="controls"></audio>
+                  <p>Fichero de partida</p>
+                  
+                  <audio src="audios/bso_resultante.wav" preload="none" controls="controls"></audio>
+                  <p>Fichero resultante</p>
+                </section>
+
+                <a class="button small imm" href="#">Cumbre</a>
+                <hr>
+
+                <section id="actividad7">
+                  <h2>Actividad 7</h2>
+                  <p>Genere una senoidal de distintas frecuencias
+                    mediante la opción Generar|Tono. Le sugerimos
+                    que pruebe con una frecuencia de 440Hz, la
+                    asociada a la nota LA del diapasón usado para
+                    afinación. Observe las diferencias tanto en su
+                    representación en el dominio del tiempo (puede
+                    necesitar hacer uso del zoom) como en la
+                    reproducción. </p>
+                  <p>Seleccione un fragmento de la onda y calcule
+                    su espectro de frecuencias mediante la opción
+                    Analizar | Análisis de Espectro. Compruebe que
+                    el pico del espectro coincide aproximadamente
+                    con la frecuencia de la senoide.</p>
+                  <p>Capturas de pantalla del tono:</p>
+                  <div class="box alt">
+                    <div class="row gtr-uniform">
+                      <div class="col-12"><span class="image fit"><img 
+                        src="images/Au_act7_frecuencia440hz.PNG"></span></div>
+                     </div>
+                  </div>
+                </section>
+
+                <a class="button small imm" href="#">Cumbre</a>
+                <hr>
+                <section id="actividad8">
+                  <h2>Actividad 8</h2>
+                  <p>El archivo dtmf.wav contiene el sonido
+                    resultante de la marcación de un número
+                    corto de teléfono mediante el sistema de
+                    tonos (DTMF). Recuerde que cada número se
+                    codifica mediante la mezcla de dos tonos
+                    según la tabla anterior. Averigüe de qué
+                    número se trata.</p>
+                  <h3>Resultado</h3>
+                  <p>El resultado se obtuvo analizanso el sonido
+                    de marcación, a traves del analizador de
+                    espectro del programa Audacity y la tabla de
+                    frecuencias.</p>
+                  <p>El primero sonido contiene dos freciencias:
+                    941hz y 1338hz, correspondiente al número 0</p>
+                  <p>El segundo sonido contiene dos frecuencias:
+                    854hz y 1479hz, correspondiente al número 9</p>
+                  <p>El tercer sonido contiene dos frecuencias:
+                    695hz y 1479hz, correspondiente al número 3</p>
+                  <br>
+                  <p>En la siguiente captura, se muestra el
+                    proceso para llegar al resultado.</p>
+                  <div class="box alt">
+                    <div class="row gtr-uniform">
+                      <div class="col-12"><span class="image fit"><img 
+                      src="images/Au_act8_tonoDTMF.PNG"></span></div>
+                    </div>
+                  </div>
+                </section>
+                <a class="button small imm" href="#">Cumbre</a>
+              </section>
+            </div>
+                                
+            <!-- Footer -->
+            <footer id="footer">
+              <section id="equipo">
+                <h2>Equipo</h2>
+                <p>Somos una bibliotecária, un ingenero
+                  industrial y una periodista con el
+                  objetivo de profundizar nuestro
+                  conocimiento sobre Gestión de la
+                  Información.</p>
+              </section>
+              <section>
+                <h2>Contactos</h2>
+                <dl class="alt">
+                  <dt>Ana Cecília Vieira</dt>
+                  <dd>anvisil@inf.upv.es</dd>
+                  <dt>Andrea Naranjo</dt>
+                  <dd>annacha@inf.upv.es</dd>
+                  <dt>Johans Peña</dt>
+                  <dd>jopear4@inf.upv.es</dd>
+                </dl>
+              </section>
+              <p class="copyright">© Untitled. Design: <a 
+                href="https://html5up.net">HTML5 UP</a>.</p>
+            </footer>
+          </div>
+          <!-- Scripts -->
+          <script src="assets/js/jquery.min.js"></script>
+          <script src="assets/js/jquery.scrollex.min.js"></script>
+          <script src="assets/js/jquery.scrolly.min.js"></script>
+          <script src="assets/js/browser.min.js"></script>
+          <script src="assets/js/breakpoints.min.js"></script>
+          <script src="assets/js/util.js"></script>
+          <script src="assets/js/main.js"></script>
+        </body>
+      </html>
